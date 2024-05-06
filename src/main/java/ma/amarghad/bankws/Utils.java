@@ -1,4 +1,9 @@
-package ma.amarghad;
+package ma.amarghad.bankws;
+
+import ma.amarghad.bankws.entities.Account;
+
+import java.util.Date;
+import java.util.Random;
 
 public class Utils {
 
@@ -20,6 +25,18 @@ public class Utils {
 
     public static double randomAmount() {
         return randomAmount(0, Double.MAX_VALUE);
+    }
+
+    public static int randomCode() {
+        return new Random().nextInt(Integer.MAX_VALUE);
+    }
+
+    public static Account randomAccount() {
+        return new Account(
+            Utils.randomCode(),
+            Utils.randomAmount(50_000),
+            new Date()
+        );
     }
 
 }
