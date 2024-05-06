@@ -1,4 +1,4 @@
-package ma.amarghad.entities;
+package ma.amarghad.bankws.entities;
 
 import java.util.Date;
 
@@ -7,6 +7,7 @@ public class Account {
     private int code;
     private double balance;
     private Date date;
+
 
     public Account() {
     }
@@ -34,5 +35,14 @@ public class Account {
     }
     public Date getDate() {
         return date;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "code=" + code +
+                ", balance=" + balance +
+                ", date=" + date +
+                '}';
     }
 }
