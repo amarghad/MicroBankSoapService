@@ -74,7 +74,9 @@ public class BankWSApp {
 ![Démarrage](docs/imgs/start.png)
 
 ## Tests avec SoapUI
+La video suivante démontre le test du service à l'aide du  SoapUI :
 
+[![Test with SOAP](https://img.youtube.com/vi/zVCS4-4Wh5k/0.jpg)](https://www.youtube.com/watch?v=zVCS4-4Wh5k)
 
 ## Conclusion
 
